@@ -31,4 +31,4 @@ class Client():
 
 if __name__ == '__main__':
     client_instance = Client('uno', 'dos', '113565')
-    print('User Abbas has been added with id ', client_instance.get_formatted_name())
+    print('User Abbas has been added with ids ', client_instance.get_formatted_name())
