@@ -9,7 +9,6 @@ class DocumentosApi(Resource):
         documentos = Documento.objects().to_json()
         return Response(documentos, mimetype="application/json", status=200)
 
-    @jwt_required
     def post(self):
         body = request.get_json()
         documento = Documento(**body).save()
