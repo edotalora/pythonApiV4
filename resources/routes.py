@@ -7,4 +7,5 @@ def initialize_routes(api):
     api.add_resource(ClientApi, '/api/client/<id>')
     api.add_resource(DocumentosApi, '/api/documentos')
     api.add_resource(DocumentoApi, '/api/documento/<id>')
+    api.add_resource(DocumentosUsuarioApi, '/api/documentos/<docUsuario>')
 
