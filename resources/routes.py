@@ -1,5 +1,5 @@
 from .client import ClientsApi, ClientApi
-from .documento import DocumentosApi, DocumentoApi
+from .documento import DocumentosApi, DocumentoApi,DocumentosUsuarioApi
 
 
 def initialize_routes(api):
