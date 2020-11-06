@@ -5,7 +5,7 @@ from service.documento import Documento
 
 class DocumentoTestCase(unittest.TestCase):
     def setUp(self):
-        self.test_documento = Client('docName', '12345', '500000')
+        self.test_documento = Documento('docName', '12345', '500000')
 
     def test_name_docName(self):
         expected_name = 'miDocName'
