@@ -8,7 +8,7 @@ class DocumentoTestCase(unittest.TestCase):
         self.test_documento = Documento('docName', '12345', '500000')
 
     def test_name_docName(self):
-        expected_name = 'miDocName'
+        expected_name = 'docName'
         self.assertEqual(self.test_documento.get_docName(), expected_name)
 
 
