@@ -35,7 +35,7 @@ class DocumentosUsuarioApi(Resource):
 class DocumentosTarifaApi(Resource):
     def get(self, id):
         try:
-            documento = Documento.objects.get(id_doc=id).to_json()
+            documento = Documento.objects.get(doc_id=id).only('tarifa').to_json()
             return Response(documento, mimetype="application/json", status=200)
         except Exception as error:
             return Response(error, status=400, mimetype='application/json') 
