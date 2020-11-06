@@ -6,6 +6,9 @@ class Documento():
         self.name = name        
         self.doc_id = doc_id
         self.tarifa = tarifa
+        
+    def get_docName(self):
+        return self.name
 
 
 if __name__ == '__main__':
