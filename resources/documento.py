@@ -31,3 +31,12 @@ class DocumentosUsuarioApi(Resource):
             return Response(documento, mimetype="application/json", status=200)
         except Exception as error:
             return Response(error, status=400, mimetype='application/json')
+        
+class DocumentosTarifaApi(Resource):
+    def get(self, id):
+        try:
+            documento = Documento.objects.get(id_doc=id).to_json()
+            tarifa = documento.tarifa
+            return {'tarifa': str(tarifa)}, 200
+        except Exception as error:
+            return Response(error, status=400, mimetype='application/json') 
