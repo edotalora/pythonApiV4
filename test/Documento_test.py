@@ -9,7 +9,7 @@ class DocumentoTestCase(unittest.TestCase):
 
     def test_name_docName(self):
         expected_name = 'miDocName'
-        self.assertEqual(self.test_client.get_docName(), expected_name)
+        self.assertEqual(self.test_documento.get_docName(), expected_name)
 
 
 if __name__ == '__main__':
